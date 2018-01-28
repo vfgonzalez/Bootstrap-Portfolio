@@ -12,10 +12,22 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     </head>
     <body>
+
+            <video autoplay muted loop id="myVideo">
+                    <source src="./assets/images/background.mp4" type="video/mp4">
+                  </video>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -24,17 +36,17 @@
                 <a class="navbar-brand" href="index.html">Vicente Gonzalez</a>
          
          
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="index.html">About</a>
+                      <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                      <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                  </div>
             </nav>
 
             <br>
@@ -45,40 +57,40 @@
 
         <div class="container">
              <div class="row" id="maxwidth">
-                 <div class="col-md-9">
-                    <h2 id="bodytitle">Contact</h2>
+                 <div class="col-md-9" id="backgroundopacity">
+                    <h2 id="bodytitle">Portfolio</h2>
                      <hr>
-                <div class="row">
+                <div class="row" id="h3">
                         <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="./assets/images/img1.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <p class="card-text">Hangman</p>
+                                  <p class="card-text" class="text-secondary">Hangman</p>
                                 </div>
                               </div>
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/images/img4.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                <p class="card-text">RPG Game</p>
+                                <p class="card-text" class="text-secondary">RPG Game</p>
                                 </div>
                         </div>
 
                         <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="./assets/images/img2.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <p class="card-text">Trivia Game</p>
+                                  <p class="card-text" class="text-secondary">Trivia Game</p>
                                 </div>
                         </div>
                         <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="./assets/images/img3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <p class="card-text">Rutgers Info Widget</p>
+                                  <p class="card-text" class="text-secondary">Rutgers Info Widget</p>
                                 </div>
                         </div>
 
                         <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="./assets/images/img5.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <p class="card-text">Rock Paper Scissors</p>
+                                  <p class="card-text" class="text-secondary">Rock Paper Scissors</p>
                                 </div>
                         </div>
 

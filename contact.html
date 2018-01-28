@@ -12,10 +12,22 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+       
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     </head>
     <body>
+
+            <video autoplay muted loop id="myVideo">
+                    <source src="./assets/images/background.mp4" type="video/mp4">
+                  </video>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -24,17 +36,19 @@
                 <a class="navbar-brand" href="index.html">Vicente Gonzalez</a>
          
          
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+       
+
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="index.html">About</a>
+                      <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                      <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                  </div>
             </nav>
 
             <br>
@@ -45,19 +59,35 @@
 
         <div class="container">
              <div class="row" id="maxwidth">
-                 <div class="col-md-9">
+                 <div class="col-md-9" id="submitarea" id="backgroundopacity">
                     <h2 id="bodytitle">Contact</h2>
                      <hr>
                 <div class="row">
-                        <input type="text" id="input" placeholder="Name">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="">First and last name</span>
+                        </div>
+                        <input type="text" class="form-control">
+                        <input type="text" class="form-control">
+                      </div>
                 </div>
                 <br>
                 <div class="row">
-                        <input type="text" id="input" placeholder="Email">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="basic-addon2">example@gmail.com</span>
+                        </div>
+                      </div>
                 </div>
                 <br>
                 <div class="row">
-                        <textarea id="textarea" rows="5" columns="6"></textarea>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Message</span>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
                 </div>
                 <br>
                 <div class="row">

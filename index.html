@@ -12,10 +12,23 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     </head>
     <body>
+
+            <video autoplay muted loop id="myVideo">
+                    <source src="./assets/images/background.mp4" type="video/mp4">
+                  </video>
+            
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -24,18 +37,19 @@
                 <a class="navbar-brand" href="index.html">Vicente Gonzalez</a>
          
          
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="index.html">About</a>
+                      <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                      <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                  </div>
             </nav>
+
 
             <br>
             <br>
@@ -45,7 +59,7 @@
 
         <div class="container">
              <div class="row" id="maxwidth">
-                 <div class="col-md-9">
+                 <div class="col-md-9" id="backgroundopacity">
                     <h2 id="bodytitle">About me</h2>
                      <hr class="linebreak">
                     <img id="personal-img" src="./assets/images/personal.jpg">
@@ -55,8 +69,20 @@
                             
                             Star Destroyer. All right, Chewie. Ready for light-speed. If your people fixed the hyperdrive. All the coordinates are set. It's now or never. Punch it! They told me they fixed it. I trusted them to fix it. It's not my fault! They'll be in range of our tractor beam in moments, lord. Did your men deactivate the hyperdrive on the Millennium Falcon? Yes, my lord. Good. Prepare the boarding party and set for your weapons for stun. Yes, my lord.</p>
 
+                            <p>
+                                We count thirty Rebel ships, Lord Vader. But they're so small they're evading our turbo-lasers! We'll have to destroy them ship to ship. Get the crews to their fighters. Luke, let me know when you're going in. I'm on my way in now... Watch yourself! There's a lot of fire coming from the right side of that deflection tower. I'm on it. Squad leaders, we've picked up a new group of signals. Enemy fighters coming your way.
+
+                                Sir, if you'll not be needing me, I'll close down for awhile. Sure, go ahead. What is it? Your fathers lightsaber. This is the weapon of a Jedi Knight. Not as clumsy or as random as a blaster. An elegant weapon for a more civilized time. For over a thousand generations the Jedi Knights were the guardians of peace and justice in the Old Republic. Before the dark times, before the Empire. How did my father die? A young Jedi named Darth Vader, who was a pupil of mine until he turned to evil, helped the Empire hunt down and destroy the Jedi Knights. He betrayed and murdered your father. Now the Jedi are all but extinct. Vader was seduced by the dark side of the Force. The Force?
+
+                                Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. Don't try to frighten us with your sorcerer's ways, Lord Vader. Your sad devotion to that ancient religion has not helped you conjure up the stolen data tapes, or given you clairvoyance enough to find the Rebel's hidden fort... I find your lack of faith disturbing. Enough of this! Vader, release him! As you wish. This bickering is pointless. Lord Vader will provide us with the location of the Rebel fortress by the time this station is operational. We will then crush the Rebellion with one swift stroke.
+
+                                Close up formation. You'd better let her loose. Almost there! I can't hold them! It's away! It's a hit! Negative. Negative! It didn't go in. It just impacted on the surface. Red Leader, we're right above you. Turn to point... oh-five, we'll cover for you. Stay there... I just lost my starboard engine. Get set to make your attack run.
+
+                                Are they away? They have just made the jump into hyperspace. You're sure the homing beacon is secure aboard their ship? I'm taking an awful risk, Vader. This had better work.
+                            </p>
+
                 </div>
-              <div class="col-md-3">
+              <div class="col-md-3" >
                   <div class="row">
                         <h2 id="connect">Connect with Me</h2>
                 </div>

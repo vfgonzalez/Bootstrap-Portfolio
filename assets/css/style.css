@@ -1,18 +1,40 @@
 body{
-    background-image: url("../images/dark_wood.png");
+    /* background-image: url("../images/f1.jpg"); */
+    font-family:'Oswald', sans-serif;
+
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
 
 #navbar{
-    background-color:grey;
+    background-color:rgb(207, 91, 91);
     color: black;
 }
 
-.linebreak{
-    color: rgb(235, 29, 29);
+hr{
+    color: rgb(63, 95, 126);
 }
 
 .container{
-    color: steelblue;
+    color: rgb(137, 148, 158);
+}
+
+#backgroundopacity{
+    background: #34383b;
+    opacity: .85;
+}
+
+#h3{
+    margin:0 100px;
+}
+
+.card{
+    margin:12px;
 }
 
 .footer{
@@ -28,10 +50,12 @@ body{
     height: 300px;
     float:left;
     margin-right: 10px;
+    opacity: 1;
 }
 
 #connect{
     margin:auto;
+    color:#3a4044
 }
 #bodytitle{
     margin:auto;
